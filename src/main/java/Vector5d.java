@@ -21,6 +21,11 @@ public class Vector5d extends Vector {
             throw new Exception("Неверно задана длина вектора");
     }
 
+    @Override
+    protected Vector CreateVector(double[] array) {
+        return null;
+    }
+
     //Складывает два пятимерных вектора и выводит вектор суммы
     public Vector5d Plus(Vector5d vector) throws Exception {
         var result = this.plus(vector);

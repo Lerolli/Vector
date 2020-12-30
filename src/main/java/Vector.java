@@ -10,7 +10,7 @@ abstract class Vector{
 
     protected abstract Vector CreateVector(double[] array);
 
-    public Vector plus(Vector vector) throws Exception {
+    public Vector plus(Vector vector) {
         var arrayVector1 = vector.arrayVector;
         var resultArray = new double[arrayVector1.length];
         for (int i = 0; i < arrayVector1.length; i++)
